@@ -6,8 +6,9 @@ import React, { useState } from 'react';
 
 
 
-/*
+
 // Petit 1)
+
 const AffichageLogMdp = () => {
   const [user, setUser] = useState({ login: 'JulienCode', mdp: 'Rapidecho' });
 
@@ -19,8 +20,7 @@ const AffichageLogMdp = () => {
   );
 };
 
-export default AffichageLogMdp;
-*/ 
+// export default AffichageLogMdp;
 
 
 // -----------------------------------------------------------------------------------
@@ -48,5 +48,5 @@ const User = () => {
   );
 };
 
-export default User;
+// export default User;
 

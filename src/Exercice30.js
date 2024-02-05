@@ -1,48 +1,55 @@
 import React, { useState } from 'react';
 
-/*
-// Exercice 1 : Créer un composant qui affiche un login et un mot de passe qui sont stocké dans deux variables.
-const AffichageLogMdp = () => {
-  const [user, setUser] = useState({ login: 'JulienCode', mdp: 'Rapidecho' });
+// Exercice 30 : 
+// 1) Créer un composant avec une opération terniaire (condition ? vrai:faux)
+// 2) Créer un composant avec un mapping (map boucle)
 
-  return (
-    <div>
-      <p>Login: {user.login}</p>
-      <p>Mot de passe: {user.mdp}</p>
-    </div>
-  );
-};
 
-export default AffichageLogMdp;
-*/ 
+
+
+// Petit 1)
+
+const MappingBoucle = ({ condition }) => {
+    return (
+      <div>
+        {condition ? (
+          <p>La condition est vraie!</p>
+        ) : (
+          <p>La condition est fausse!</p>
+        )
+        }
+      </div>
+    );
+  };
+  
+// export default MappingBoucle;
+
 
 
 // -----------------------------------------------------------------------------------
 
 
-// Exercice 2 : Créer un composant qui affiche un login et un mot de passe qui sont stockés dans 1 variable 
-// de l'objet User.
+// Petit 2)
 
-const UserDisplay = ({ user }) => {
-  return (
-    <div>
-      <p>Login: {user.login}</p>
-      <p>Mot de passe: {user.mdp}</p>
-    </div>
-  );
-};
+const MaListe = ({ items }) => {
+    return (
+      <ul>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    );
+  };
+  
+  const AffichageListe = () => {
+    const data = ['Item 1', 'Item 2', 'Item 3'];
+  
+    return (
+      <div>
+        <h1>Affichage de la liste</h1>
+        <MaListe items={data} />
+      </div>
+    );
+  };
 
-const User = () => {
-  // objet User
-  const user = { login: 'JulienCode', mdp: 'Rapidecho' };
-
-  return (
-    <div>
-      <h1>Affichage des informations utilisateur</h1>
-      <UserDisplay user={user} />
-    </div>
-  );
-};
-
-export default User;
-
+// export default AffichageListe;
