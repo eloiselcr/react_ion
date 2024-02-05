@@ -5,8 +5,6 @@ import React, { useState } from 'react';
 // 2) Créer un composant avec un mapping (map boucle)
 
 
-
-
 // Petit 1)
 
 const MappingBoucle = ({ condition }) => {

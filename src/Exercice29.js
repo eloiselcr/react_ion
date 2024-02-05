@@ -5,8 +5,6 @@ import React, { useState } from 'react';
 // 2) Créer un composant qui affiche un logi et un mdp (stockés dans un objet avec une propriété login/mdp)
 
 
-
-
 // Petit 1)
 
 const AffichageLogMdp = () => {
