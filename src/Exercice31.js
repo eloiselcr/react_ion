@@ -5,13 +5,12 @@ import React, { useState } from 'react';
 // afficher le texte en rouge.
 
 
-
-const LoginForm = () => {
-  const [formData, setFormData] = useState({ login: '', mdp: '' });
-  const [errorMessage, setErrorMessage] = useState('');
+const Formulaire = () => {
+  const [formData, FormulaireData] = useState({ login: '', mdp: '' });
+  const [errorMessage, MsgErreur] = useState('');
 
   const handleInputChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    FormulaireData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
@@ -19,9 +18,9 @@ const LoginForm = () => {
 
     // Vérifier si le mot de passe est correct = 1234
     if (formData.mdp !== '1234') {
-      setErrorMessage('Mot de passe incorrect. Veuillez réessayer.');
+      MsgErreur('Mot de passe incorrect. Veuillez réessayer.');
     } else {
-      setErrorMessage('');
+      MsgErreur('Mot de passe correct !');
     }
   };
 
@@ -57,6 +56,6 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default Formulaire;
 
 
