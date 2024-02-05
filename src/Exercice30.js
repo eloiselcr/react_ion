@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 
-// Exercice 29 : 
-// 1) Créer un composant qui affiche un login et un mdp (stockés dans 2 variables)
-// 2) Créer un composant qui affiche un logi et un mdp (stockés dans un objet avec une propriété login/mdp)
-
-
-
 /*
-// Petit 1)
+// Exercice 1 : Créer un composant qui affiche un login et un mot de passe qui sont stocké dans deux variables.
 const AffichageLogMdp = () => {
   const [user, setUser] = useState({ login: 'JulienCode', mdp: 'Rapidecho' });
 
@@ -26,7 +20,9 @@ export default AffichageLogMdp;
 // -----------------------------------------------------------------------------------
 
 
-// Petit 2)
+// Exercice 2 : Créer un composant qui affiche un login et un mot de passe qui sont stockés dans 1 variable 
+// de l'objet User.
+
 const UserDisplay = ({ user }) => {
   return (
     <div>
